@@ -27,6 +27,7 @@ for key,value in contacts.items():
         clis.append(c)
 cc=set(clis)        
 print(f"common cities are: {cc}")
+#کامیت
 
 
 
