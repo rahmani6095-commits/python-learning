@@ -39,3 +39,4 @@ ind_cities(phone_notebook)
 contact_mail(phone_notebook)
 common_cities(phone_notebook,"tehran","rasht")
 notebook_brief(phone_notebook)
+#finish
