@@ -7,3 +7,4 @@ file=open("first_file.text","r")
 content=file.read()
 print(content)
 file.close()
+#finish
