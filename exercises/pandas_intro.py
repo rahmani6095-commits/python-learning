@@ -30,3 +30,9 @@ print(data_csv.head(3))
 print(data_csv.describe())
 print(data_csv["age"])
 print(data_csv[data_csv["age"]>25])
+#%%
+import pandas as pd
+df=pd.read_excel("friends.xlsx")
+print(df)
+
+# %%
