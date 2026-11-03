@@ -32,3 +32,38 @@ print("table after filling")
 print(df)
 print("number of empty data:",df.isnull().sum().sum())
 # %%
+import pandas as pd
+df=pd.read_excel("department.xlsx")
+print("basic table")
+print(df)
+print("salary average for each department")
+print(df.groupby("department")["salary"].mean())
+print("sum of salary for each department")
+print(df.groupby("department")["salary"].sum())
+print("number of staff for each department")
+print(df.groupby("department")["employee"].count())
+print("staff with max salary")
+print(df["salary"].max())
+# %%
+import pandas as pd
+import numpy as np
+df=pd.read_excel("freezer.xlsx")
+print("basic table")
+print(df)
+print("number of empty cell:")
+print(df.isnull().sum().sum())
+print("fill empty data")
+df["price"]=df["price"].fillna(df["price"].mean())
+print(df)
+print("number of duplicated:")
+print(df.duplicated().sum())
+print("delet duplicat")
+df_clean=df.drop_duplicates()
+print(df_clean)
+print("number of brans")
+print(df_clean.groupby("name")["price"].count())
+print("price average for each brand")
+print(df_clean.groupby("name")["price"].mean())
+
+
+# %%
