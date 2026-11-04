@@ -70,3 +70,37 @@ plt.ylabel("numbre of employee")
 plt.show()
 
 # %%
+import matplotlib.pyplot as plt
+import pandas as pd
+df=pd.read_excel("name frequency.xlsx")
+print("TABLE")
+print(df)
+plt.figure(figsize=(8,4))
+plt.plot(df["name"],df["frequency"],marker="o",color="blue",linestyle="-",linewidth=2)
+plt.title("Name Frequency")
+plt.xlabel("name")
+plt.ylabel("frequency")
+plt.grid(True)
+plt.show()
+plt.Figure(figsize=(8,4))
+plt.bar(df["name"],df["frequency"],color=["blue","red","green","orange","purple","black","yellow","pink","brown","gray"])
+plt.title("Name Frequency")
+plt.xlabel("name")
+plt.ylabel("frequency")
+plt.show()
+plt.Figure(figsize=(8,4))
+plt.scatter(df["name"],df["frequency"],color="blue",alpha=.7)
+plt.title("Name Frequency")
+plt.xlabel("name")
+plt.ylabel("frequency")
+plt.grid(True)
+plt.show()
+plt.Figure(figsize=(8,4))
+plt.hist(df["name"],color="blue",edgecolor="orange",bins=11)
+plt.title("dist of name")
+plt.xlabel("name")
+plt.ylabel("count")
+plt.show()
+
+# %%
+
